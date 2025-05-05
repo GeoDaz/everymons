@@ -22,8 +22,8 @@ function processPokemonsData(jsonData) {
 			!uniquePokemons[pokemon.usageName] ||
 			uniquePokemons[pokemon.usageName].gen < pokemon.gen
 		) {
-			pokemon.prevo = formatKeys(pokemon.prevo);
-			pokemon.baseform = formatKeys(pokemon.baseForm);
+			pokemon.prevo = pokemon.prevo;
+			pokemon.baseform = pokemon.baseForm;
 			uniquePokemons[pokemon.usageName] = pokemon;
 		}
 	});
@@ -34,15 +34,12 @@ function processPokemonsData(jsonData) {
 			...uniquePokemons[key],
 			// Créer un tableau d'abilities (remplir avec null si absent)
 			abilities: removeNullValues([
-				formatKeys(moveData.ability_1),
-				formatKeys(moveData.ability_2),
-				formatKeys(moveData.ability_hidden),
+				moveData.ability_1,
+				moveData.ability_2,
+				moveData.ability_hidden,
 			]),
 			// Créer un tableau de types (filtrer les nulls)
-			types: removeNullValues([
-				formatKeys(moveData.type_1),
-				formatKeys(moveData.type_2),
-			]),
+			types: removeNullValues([moveData.type_1, moveData.type_2]),
 		};
 
 		if (transformedData.baseform) {

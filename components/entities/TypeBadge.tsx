@@ -1,19 +1,18 @@
-import { Type, TypeDict } from '@/types/Type';
+import { Type } from '@/types/Type';
 import Badge from '@/components/ui/badge';
-import types from '@/json/types.json';
-import Icon from '../ui/icon';
 import { typeIcons } from '@/lib/types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface Props {
-	type: Type;
+	name: Type;
 }
 
-const TypeBadge = ({ type }: Props) => {
-	const name = (types as TypeDict)[type];
-	const icon = typeIcons[type];
+const TypeBadge = ({ name }: Props) => {
+	const icon = typeIcons[name];
 	return (
-		<Badge variant={type} key={type}>
-			<Icon name={icon} /> {name}
+		<Badge variant={name} key={name}>
+			<FontAwesomeIcon icon={icon} className="h-[1em] w-[1em] mr-2" />
+			{name}
 		</Badge>
 	);
 };

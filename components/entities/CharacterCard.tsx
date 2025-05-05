@@ -1,10 +1,10 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import { Character } from '@/types/Character';
 import {
 	Card,
 	CardContent,
 	CardDescription,
-	CardFooter,
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
@@ -14,27 +14,32 @@ import AbilityBadge from './AbilityBadge';
 import TypeBadge from './TypeBadge';
 
 interface Props {
-	keyName: string;
 	character: Character;
 }
 
-const CharacterCard = ({ keyName, character }: Props) => {
+const CharacterCard = ({ character }: Props) => {
+	const [imgSrc, setImgSrc] = useState(`/images/characters/${character.key}.webp`);
+
 	return (
-		<Card className="w-[300px] overflow-hidden">
+		<Card className="character">
 			<CardHeader className="pb-4">
-				<div className="relative w-full h-[150px]">
+				<Badge variant="tertiary" className="absolute top-2 right-2">
+					{character.license}
+				</Badge>
+				<div className="relative w-full h-[65px]">
 					<Image
-						src={`/images/characters/${keyName}.png`}
+						src={imgSrc}
+						onError={() => setImgSrc(`/images/characters/${character.key}.png`)}
 						alt={character.name}
 						fill
 						className="object-contain"
 						priority
 					/>
 				</div>
-				<CardTitle className="text-center mb-3">{character.name}</CardTitle>
+				<CardTitle className="text-center">{character.name}</CardTitle>
 				<CardDescription className="flex gap-2 justify-center">
 					{character.types.map(type => (
-						<TypeBadge key={type} type={type} />
+						<TypeBadge key={type} name={type} />
 					))}
 				</CardDescription>
 			</CardHeader>
@@ -58,9 +63,6 @@ const CharacterCard = ({ keyName, character }: Props) => {
 					</div>
 				</div>
 			</CardContent>
-			<CardFooter className="justify-end pb-4">
-				<Badge variant="tertiary">{character.license}</Badge>
-			</CardFooter>
 		</Card>
 	);
 };

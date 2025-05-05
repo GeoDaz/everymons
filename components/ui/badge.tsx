@@ -2,11 +2,11 @@ import * as React from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 import types from '@/json/types.json';
-import { typeBrightness, typeColors } from '@/lib/types';
+import { typeColors } from '@/lib/types';
 import { Type, TypeDict } from '@/types/Type';
 
-const getTypeTextColor = (type: Type) =>
-	typeBrightness[type] === 'light' ? 'slate-50' : 'slate-950';
+// const getTypeTextColor = (type: Type) =>
+// 	typeBrightness[type] === 'light' ? 'slate-950' : 'slate-50';
 
 export const badgeVariants = cva(
 	'inline-flex items-center border px-2.5 py-0.5 text-xs font-semibold transition-colors',
@@ -17,11 +17,12 @@ export const badgeVariants = cva(
 				secondary: 'border-transparent rounded bg-primary/10',
 				tertiary: 'border-transparent rounded bg-muted text-muted-foreground',
 				outline: 'border-slate-400 rounded-full',
-				...Object.keys(types).reduce((acc, t) => {
+				...types.reduce((acc, t) => {
 					const type = t as Type;
 					const color = typeColors[type];
-					const textColor = getTypeTextColor(type);
-					acc[type] = `border-slate-400 rounded-full bg-${color} text-${textColor}`;
+					// const textColor = getTypeTextColor(type);
+					// prettier-ignore
+					acc[type] = `border-transparent rounded-full bg-${color} text-slate-50`; //text-${textColor}
 					return acc;
 				}, {} as TypeDict),
 			},

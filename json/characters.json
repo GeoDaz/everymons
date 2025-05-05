@@ -1,51 +1,415 @@
 {
-	"pikachu": {
+	"Mario": {
+		"key": "mario",
+		"name": "Mario",
+		"types": ["Normal", "Fighting"],
+		"abilities": ["Quick Feet"],
+		"moves": ["Stomp", "Jump Kick", "Bounce", "Flame Burst"],
+		"license": "Mario",
+		"tags": ["Main Character"]
+	},
+	"Link": {
+		"key": "link",
+		"name": "Link",
+		"types": ["Fighting"],
+		"abilities": ["Justified"],
+		"moves": ["Slash", "King's Shield", "Triple Arrows", "Seed Bomb"],
+		"license": "Zelda",
+		"tags": ["Main Character"]
+	},
+	"Pikachu": {
+		"key": "pikachu",
 		"name": "Pikachu",
-		"types": ["electric"],
-		"abilities": ["static", "lightningrod"],
-		"moves": ["volttackle", "electroball", "irontail", "quickattack"],
+		"types": ["Electric"],
+		"abilities": ["Static", "Lightning Rod"],
+		"moves": ["Volt Tackle", "Thunderbolt", "Iron Tail", "Quick Attack"],
+		"license": "Pokemon",
+		"tags": ["Main Character"]
+	},
+	"Agumon": {
+		"key": "agumon",
+		"name": "Agumon",
+		"types": ["Fire"],
+		"abilities": ["Blaze"],
+		"moves": ["Ember", "Scratch", "Bite", "Growl"],
+		"license": "Digimon",
+		"tags": ["Main Character"]
+	},
+	"Omegamon": {
+		"key": "omegamon",
+		"name": "Omegamon",
+		"types": ["Fire", "Ice"],
+		"abilities": ["Justified", "Thermal Exchange"],
+		"moves": ["Sacred Sword", "Burn Up", "Ice Burn", "Armor Cannon"],
+		"license": "Digimon",
+		"tags": ["Main Character"]
+	},
+	"WarGreymon": {
+		"key": "wargreymon",
+		"name": "WarGreymon",
+		"types": ["Fire", "Steel"],
+		"abilities": ["Blaze", "Tough Claws"],
+		"moves": ["Sunsteel Strike", "Fusion Flare", "Drill Run", "Flare Blitz"],
+		"license": "Digimon",
+		"tags": ["Side Character"]
+	},
+	"MetalGarurumon": {
+		"key": "metalgarurumon",
+		"name": "MetalGarurumon",
+		"types": ["Ice", "Steel"],
+		"abilities": ["Sheer Force"],
+		"moves": ["Ice Beam", "Ice Burn", "Freeze Shock", "Steel Beam"],
+		"license": "Digimon",
+		"tags": ["Side Character"]
+	},
+	"Slime": {
+		"key": "slime",
+		"name": "Slime",
+		"types": ["Normal"],
+		"abilities": ["Trace"],
+		"moves": ["Tackle", "Scary Face", "Splash", "Flail"],
+		"license": "Dragon Quest",
+		"tags": ["Main Character"]
+	},
+	"Kuriboh": {
+		"key": "kuriboh",
+		"name": "Kuriboh",
+		"types": ["Dark", "Fairy"],
+		"abilities": ["Prankster"],
+		"moves": ["Final Gambit", "Memento", "Destiny Bond", "Protect"],
+		"license": "Yu-Gi-Oh",
+		"tags": ["Main Character"]
+	},
+	"Dark Magician": {
+		"key": "dark-magician",
+		"name": "Dark Magician",
+		"types": ["Psychic", "Dark"],
+		"abilities": ["Magician", "Magic Guard"],
+		"moves": ["Dark Pulse", "Mystical Power", "Dazzling Gleam", "Eerie Spell"],
+		"license": "Yu-Gi-Oh",
+		"tags": ["Main Character"]
+	},
+	"Blue Eyes White Dragon": {
+		"key": "blue-eyes-white-dragon",
+		"name": "Blue Eyes White Dragon",
+		"types": ["Dragon", "Fairy"],
+		"abilities": ["Pressure", "Levitate", "Multiscale"],
+		"moves": ["Dragon Pulse", "Moonblast", "Flash Cannon", "Dragon Energy"],
+		"license": "Yu-Gi-Oh",
+		"tags": ["Side Character"]
+	},
+	"Red Eyes Black Dragon": {
+		"key": "red-eyes-black-dragon",
+		"name": "Red Eyes Black Dragon",
+		"types": ["Dragon", "Dark"],
+		"abilities": ["Unnerve", "Levitate", "Intimidate"],
+		"moves": ["Flamethrower", "Dark Pulse", "Dragon Breath", "Dragon Rage"],
+		"license": "Yu-Gi-Oh",
+		"tags": ["Side Character"]
+	},
+	"Neos": {
+		"key": "elemental-hero-neos",
+		"name": "Neos",
+		"types": ["Psychic", "Fighting"],
+		"abilities": ["Magician", "Magic Guard"],
+		"moves": ["Comet Punch", "Meteor Mash", "Meteor Beam", "Cosmic Power"],
+		"license": "Yu-Gi-Oh",
+		"tags": ["Side Character"]
+	},
+	"Zelda": {
+		"key": "zelda",
+		"name": "Zelda",
+		"types": ["Psychic", "Fairy"],
+		"abilities": ["Magic Guard", "Forewarn"],
+		"moves": ["Lumina Crash", "Dazzling Gleam", "Mirror Coat", "Calm Mind"],
+		"license": "Zelda",
+		"tags": ["Main Character"]
+	},
+	"Sheik": {
+		"key": "sheik",
+		"name": "Sheik",
+		"types": ["Dark", "Fairy"],
+		"abilities": ["Skill Link"],
+		"moves": ["Pin Missile", "Wrap", "Mist", "Sucker Punch"],
+		"license": "Zelda",
+		"tags": ["Side Character"]
+	},
+	"Kirby": {
+		"key": "kirby",
+		"name": "Kirby",
+		"types": ["Normal", "Fairy"],
+		"abilities": ["Color Change", "Protean"],
+		"moves": ["Copycat", "Stockpile", "Swallow", "Spit Up"],
+		"license": "Kirby",
+		"tags": ["Main Character"]
+	},
+	"Sonic": {
+		"key": "sonic",
+		"name": "Sonic",
+		"types": ["Normal", "Electric"],
+		"abilities": ["Quick Feet", "Speed Boost"],
+		"moves": ["Rollout", "Extreme Speed", "Aura Wheel", "Rolling Kick"],
+		"license": "Sonic",
+		"tags": ["Main Character"]
+	},
+	"Samus": {
+		"key": "samus",
+		"name": "Samus",
+		"types": ["Steel", "Electric"],
+		"abilities": ["Download", "Technician"],
+		"moves": ["Zap Cannon", "Flash Cannon", "Lock-On", "Wild Charge"],
+		"license": "Metroid",
+		"tags": ["Main Character"]
+	},
+	"Shadow": {
+		"key": "shadow",
+		"name": "Shadow",
+		"types": ["Normal", "Dark"],
+		"abilities": ["Quick Feet", "Speed Boost"],
+		"moves": ["Rollout", "Extreme Speed", "Aura Wheel", "Steamroller"],
+		"license": "Sonic",
+		"tags": ["Rivals"]
+	},
+	"Tails": {
+		"key": "tails",
+		"name": "Tails",
+		"types": ["Normal", "Flying"],
+		"abilities": ["Wind Power", "Speed Boost"],
+		"moves": ["Tail Slap", "Extreme Speed", "Whirlwind", "Hurricane"],
+		"license": "Sonic",
+		"tags": ["Side Character"]
+	},
+	"Knuckles": {
+		"key": "knuckles",
+		"name": "Knuckles",
+		"types": ["Ground", "Fighting"],
+		"abilities": ["Iron Fist"],
+		"moves": ["Drill Run", "Dynamic Punch", "Bullet Punch", "Meteor Mash"],
+		"license": "Sonic",
+		"tags": ["Side Character"]
+	},
+	"Donkey Kong": {
+		"key": "donkey-kong",
+		"name": "Donkey Kong",
+		"types": ["Fighting"],
+		"abilities": ["Guts", "Iron Fist"],
+		"moves": ["Focus Punch", "Mega Punch", "Dynamic Punch", "Bulk Up"],
+		"license": "Donkey Kong",
+		"tags": ["Main Character"]
+	},
+	"Pac-Man": {
+		"key": "pacman",
+		"name": "Pac-Man",
+		"types": ["Normal"],
+		"abilities": ["Simple"],
+		"moves": ["Rollout", "Defense Curl", "Crunch", "Mega Punch"],
+		"license": "Arcade",
+		"tags": ["Main Character"]
+	},
+	"Peach": {
+		"key": "peach",
+		"name": "Peach",
+		"types": ["Normal", "Fairy"],
+		"abilities": ["Cute Charm", "Serene Grace"],
+		"moves": ["Play Rough", "Natural Gift", "Attract", "Sweet Kiss"],
+		"license": "Mario",
+		"tags": ["Main Character"]
+	},
+	"Yoshi": {
+		"key": "yoshi",
+		"name": "Yoshi",
+		"types": ["Normal"],
+		"abilities": ["Oblivious", "Own Tempo"],
+		"moves": ["Lick", "Egg Bomb", "Bounce", "Rollout"],
+		"license": "Mario",
+		"tags": ["Main Character"]
+	},
+	"Bowser": {
+		"key": "bowser",
+		"name": "Bowser",
+		"types": ["Fire", "Dark"],
+		"abilities": ["Rough Skin", "Intimidate"],
+		"moves": ["Flamethrower", "Eruption", "Earthquake", "Rapid Spin"],
+		"license": "Mario",
+		"tags": ["Big Boss"]
+	},
+	"Ganon": {
+		"key": "ganon",
+		"name": "Ganon",
+		"types": ["Dark"],
+		"abilities": ["Moxie"],
+		"moves": ["Dark Pulse", "Meteor Assault", "Heavy Slam", "Bonemerang"],
+		"license": "Zelda",
+		"tags": ["Big Boss"]
+	},
+	"Mewtwo": {
+		"key": "mewtwo",
+		"name": "Mewtwo",
+		"types": ["Psychic"],
+		"abilities": ["Pressure", "Unnerve", "Telepathy"],
+		"moves": ["Psystrike", "Shadow Ball", "Aura Sphere", "Barrier"],
+		"license": "Pokemon",
+		"tags": ["Big Boss"]
+	},
+	"Charizard": {
+		"key": "charizard",
+		"name": "Charizard",
+		"types": ["Fire", "Flying"],
+		"abilities": ["Blaze", "Solar Power"],
+		"moves": ["Flamethrower", "Seismic Toss", "Sky Drop", "Dragon Claw"],
+		"license": "Pokemon",
+		"tags": ["Side Character"]
+	},
+	"Lucario": {
+		"key": "lucario",
+		"name": "Lucario",
+		"types": ["Steel", "Fighting"],
+		"abilities": ["Inner Focus", "Justified", "Telepathy"],
+		"moves": ["Aura Sphere", "Force Palm", "Bone Rush", "Metal Claw"],
+		"license": "Pokemon",
+		"tags": ["Side Character"]
+	},
+	"Greninja": {
+		"key": "greninja",
+		"name": "Greninja",
+		"types": ["Water", "Dark"],
+		"abilities": ["Torrent", "Battle Bond", "Protean"],
+		"moves": ["Water Shuriken", "Night Slash", "Shadow Sneak", "Substitute"],
+		"license": "Pokemon",
+		"tags": ["Side Character"]
+	},
+	"Incineroar": {
+		"key": "incineroar",
+		"name": "Incineroar",
+		"types": ["Fire", "Dark"],
+		"abilities": ["Blaze", "Intimidate"],
+		"moves": ["Darkest Lariat", "Fire Lash", "Circle Throw", "Bulk Up"],
 		"license": "Pokemon"
 	},
-	"mario": {
-		"name": "Mario",
-		"types": ["normal", "fighting"],
-		"abilities": ["quickfeet", "simple"],
-		"moves": ["stomp", "jumpkick", "bounce", "flameburst"],
+	"Decidueye": {
+		"key": "decidueye",
+		"name": "Decidueye",
+		"types": ["Grass", "Ghost"],
+		"abilities": ["Overgrow", "Long Reach"],
+		"moves": ["Spirit Shackle", "Lock-On", "Razor Leaf", "Brave Bird"],
+		"license": "Pokemon"
+	},
+	"Primarina": {
+		"key": "primarina",
+		"name": "Primarina",
+		"types": ["Water", "Fairy"],
+		"abilities": ["Torrent", "Liquid Voice"],
+		"moves": ["Sparkling Aria", "Alluring Voice", "Hyper Voice", "Sing"],
+		"license": "Pokemon"
+	},
+	"Delphox": {
+		"key": "delphox",
+		"name": "Delphox",
+		"types": ["Fire", "Psychic"],
+		"abilities": ["Blaze", "Magician"],
+		"moves": ["Mystical Fire", "Psyshock", "Magic Room", "Will-O-Wisp"],
+		"license": "Pokemon"
+	},
+	"Sceptile": {
+		"key": "sceptile",
+		"name": "Sceptile",
+		"types": ["Grass"],
+		"abilities": ["Overgrow", "Unburden"],
+		"moves": ["Leaf Blade", "Solar Beam", "Leaf Storm", "X-Scissor"],
+		"license": "Pokemon"
+	},
+	"Blaziken": {
+		"key": "blaziken",
+		"name": "Blaziken",
+		"types": ["Fire", "Fighting"],
+		"abilities": ["Blaze", "Speed Boost"],
+		"moves": ["Blaze Kick", "High Jump Kick", "Overheat", "Sky Uppercut"],
+		"license": "Pokemon"
+	},
+	"King Dedede": {
+		"key": "king-dedede",
+		"name": "King Dedede",
+		"types": ["Normal"],
+		"abilities": ["Anger Point", "Mold Breaker"],
+		"moves": ["Wood Hammer", "Body Slam", "Stockpile", "Spit Up"],
+		"license": "Kirby",
+		"tags": ["Big Boss"]
+	},
+	"King K. Rool": {
+		"key": "king-k-rool",
+		"name": "King K. Rool",
+		"types": ["Water", "Dark"],
+		"abilities": ["Mold Breaker", "Intimidate"],
+		"moves": ["Fling", "Liquidation", "Crunch", "Counter"],
+		"license": "Donkey Kong",
+		"tags": ["Big Boss"]
+	},
+	"Ridley": {
+		"key": "ridley",
+		"name": "Ridley",
+		"types": ["Dark", "Flying"],
+		"abilities": ["Pressure", "Moxie"],
+		"moves": ["Crunch", "Fell Stinger", "Flamethrower", "Dual Wingbeat"],
+		"license": "Metroid",
+		"tags": ["Big Boss"]
+	},
+	"Meta Knight": {
+		"key": "meta-knight",
+		"name": "Meta Knight",
+		"types": ["Dark", "Steel"],
+		"abilities": ["Sharpness", "Infiltrator"],
+		"moves": ["Night Slash", "Phantom Force", "Iron Head", "Twister"],
+		"license": "Kirby",
+		"tags": ["Rivals"]
+	},
+	"FectoElfilis": {
+		"key": "fecto-elfilis",
+		"name": "FectoElfilis",
+		"types": ["Psychic", "Fighting"],
+		"abilities": ["Pressure", "Unnerve"],
+		"moves": ["Psystrike", "Meteor Assault", "Meteor Beam", "Photon Geyser"],
+		"license": "Kirby"
+	},
+	"MorphoKnight": {
+		"key": "morphoknight",
+		"name": "MorphoKnight",
+		"types": ["Fire", "Bug"],
+		"abilities": ["Swarm", "Sharpness"],
+		"moves": ["Bitter Blade", "First Impression", "Quiver Dance", "Magma Storm"],
+		"license": "Kirby"
+	},
+	"Luigi": {
+		"key": "luigi",
+		"name": "Luigi",
+		"types": ["Normal", "Fighting"],
+		"abilities": ["Scrappy"],
+		"moves": ["Take Down", "Low Sweep", "Sky Uppercut", "Double Slap"],
+		"license": "Mario",
+		"tags": ["Side Character"]
+	},
+	"Wario": {
+		"key": "wario",
+		"name": "Wario",
+		"types": ["Poison", "Dark"],
+		"abilities": ["Stench", "Strong Jaw"],
+		"moves": ["Crunch", "Poison Gas", "Stomp", "Steel Roller"],
+		"license": "Mario",
+		"tags": ["Side Character"]
+	},
+	"Rosalina": {
+		"key": "rosalina",
+		"name": "Rosalina",
+		"types": ["Fairy", "Psychic"],
+		"abilities": ["Illuminate", "Serene Grace"],
+		"moves": ["Dazzling Gleam", "Swift", "Wish", "Cosmic Power"],
 		"license": "Mario"
 	},
-	"sonic": {
-		"name": "Sonic",
-		"types": ["normal", "electric"],
-		"abilities": ["quickfeet", "speedboost"],
-		"moves": ["rollout", "extremespeed", "electroball", "rollingkick"],
-		"license": "Sonic"
-	},
-	"agumon": {
-		"name": "Agumon",
-		"types": ["fire"],
-		"abilities": ["blaze"],
-		"moves": ["ember", "scratch", "bite", "growl"],
-		"license": "Digimon"
-	},
-	"slime": {
-		"name": "Slime",
-		"types": ["normal"],
-		"abilities": ["trace"],
-		"moves": ["tackle", "scaryface", "splash", "flail"],
-		"license": "Dragon Quest"
-	},
-	"kuriboh": {
-		"name": "Kuriboh",
-		"types": ["dark"],
-		"abilities": ["prankster"],
-		"moves": ["finalgambit", "memento", "destinybond", "protect"],
-		"license": "Yu-Gi-Oh"
-	},
-	"link": {
-		"name": "Link",
-		"types": ["fighting"],
-		"abilities": ["justified"],
-		"moves": ["slash", "kingsshield", "triplearrows", "eggbomb"],
-		"license": "Zelda"
+	"Thor": {
+		"key": "thor",
+		"name": "Thor",
+		"types": ["Electric", "Fighting"],
+		"abilities": ["Pressure", "Unnerve"],
+		"moves": ["Bolt Strike", "Gigaton Hammer", "Thunder", "Bulk Up"],
+		"license": "Marvel"
 	}
 }

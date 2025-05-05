@@ -10,17 +10,23 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import Icon from './ui/icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleHalfStroke, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 export function ModeToggle() {
-	const { setTheme } = useTheme();
+	const { theme, setTheme } = useTheme();
 
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
 				<Button variant="outline" size="icon">
-					<Icon name="sun" />
-					<Icon name="moon" />
+					{theme === 'dark' ? (
+						<FontAwesomeIcon icon={faMoon} />
+					) : theme === 'light' ? (
+						<FontAwesomeIcon icon={faSun} />
+					) : (
+						<FontAwesomeIcon icon={faCircleHalfStroke} />
+					)}
 					<span className="sr-only">Toggle theme</span>
 				</Button>
 			</DropdownMenuTrigger>
