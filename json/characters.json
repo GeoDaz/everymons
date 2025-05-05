@@ -1,0 +1,51 @@
+{
+	"pikachu": {
+		"name": "Pikachu",
+		"types": ["electric"],
+		"abilities": ["static", "lightningrod"],
+		"moves": ["volttackle", "electroball", "irontail", "quickattack"],
+		"license": "Pokemon"
+	},
+	"mario": {
+		"name": "Mario",
+		"types": ["normal", "fighting"],
+		"abilities": ["quickfeet", "simple"],
+		"moves": ["stomp", "jumpkick", "bounce", "flameburst"],
+		"license": "Mario"
+	},
+	"sonic": {
+		"name": "Sonic",
+		"types": ["normal", "electric"],
+		"abilities": ["quickfeet", "speedboost"],
+		"moves": ["rollout", "extremespeed", "electroball", "rollingkick"],
+		"license": "Sonic"
+	},
+	"agumon": {
+		"name": "Agumon",
+		"types": ["fire"],
+		"abilities": ["blaze"],
+		"moves": ["ember", "scratch", "bite", "growl"],
+		"license": "Digimon"
+	},
+	"slime": {
+		"name": "Slime",
+		"types": ["normal"],
+		"abilities": ["trace"],
+		"moves": ["tackle", "scaryface", "splash", "flail"],
+		"license": "Dragon Quest"
+	},
+	"kuriboh": {
+		"name": "Kuriboh",
+		"types": ["dark"],
+		"abilities": ["prankster"],
+		"moves": ["finalgambit", "memento", "destinybond", "protect"],
+		"license": "Yu-Gi-Oh"
+	},
+	"link": {
+		"name": "Link",
+		"types": ["fighting"],
+		"abilities": ["justified"],
+		"moves": ["slash", "kingsshield", "triplearrows", "eggbomb"],
+		"license": "Zelda"
+	}
+}

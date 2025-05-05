@@ -1,0 +1,26 @@
+export type Type =
+	// | 'neutral'
+	| 'normal'
+	| 'fighting'
+	| 'flying'
+	| 'grass'
+	| 'water'
+	| 'fire'
+	| 'electric'
+	| 'ice'
+	// | 'earth'
+	| 'ground'
+	| 'rock'
+	| 'poison'
+	| 'bug'
+	// | 'light'
+	| 'fairy'
+	| 'dark'
+	// | 'arcane'
+	| 'psychic'
+	// | 'undead'
+	| 'ghost'
+	| 'dragon'
+	| 'steel';
+
+export type TypeDict = { [key in Type]: string };
